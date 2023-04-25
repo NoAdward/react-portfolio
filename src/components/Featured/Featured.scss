@@ -1,0 +1,40 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.featured {
+  &__title {
+    @include text($ff, 700, 16px, 16px, $lightgray);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  &__img {
+    img {
+      max-width: 612px;
+    }
+  }
+
+  &__desc {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 96px;
+    
+  }
+
+  &__item {
+    display: flex;
+    img {
+      max-height: 888px;
+    }
+
+    
+    &_2 {
+      margin-top: 138px;
+    }
+  }
+}

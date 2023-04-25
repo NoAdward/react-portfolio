@@ -1,0 +1,26 @@
+@import "src/scss/vars";
+@import "src/scss/mixins";
+
+.footer {
+  margin-top: 124px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #696969;
+  &__title {
+    padding: 48px 0;
+    @include text($ff, 600, 16px, 36px, $text-gray);
+    letter-spacing: -0.5px;
+    span {
+        color: #ECECEC;
+    }
+  }
+
+  &__socials {
+    padding: 48px 0;
+    display: flex;
+    gap: 43px;
+  }
+
+  &__item {
+  }
+}

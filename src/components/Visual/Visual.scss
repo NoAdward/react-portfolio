@@ -1,0 +1,14 @@
+.visual {
+    margin-top: 240px;
+  &__list {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 24px;
+  }
+
+  &__item {
+    img {
+        max-width: 400px;
+    }
+  }
+}
