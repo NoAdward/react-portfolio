@@ -8,24 +8,42 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-
+  flex-wrap: wrap-reverse;
+  @media (max-width: $tablet){
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    justify-content: center;
+    text-align: center;
+  }
   &__title {
     margin-bottom: 24px;
     max-width: 506px;
     @include text($ff, 700, 54px, 64px, $lightgray);
     letter-spacing: -0.5px;
+    @media (max-width: $tablet) {
+      display: flex;
+      // text-align: center;
+    }
   }
 
   &__desc {
+    display: flex;
     max-width: 395px;
     @include text($ff, 600, 20px, 30px, $text-gray);
     letter-spacing: -0.5px;
     margin-bottom: 88px;
+    @media (max-width: $tablet) {
+      margin-inline: auto;
+    }
   }
 
  
 
   &__image {
     padding-right: 106px;
+    @media (max-width: $tablet){
+      padding: 0;
+    }
   }
 }

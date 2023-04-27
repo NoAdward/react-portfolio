@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #696969;
+  flex-wrap: wrap-reverse;
+  @media (max-width: $tablet-small) {
+    display: flex;
+    justify-content: center;
+  }
   &__title {
     padding: 48px 0;
     @include text($ff, 600, 16px, 36px, $text-gray);
@@ -13,14 +18,18 @@
     span {
         color: #ECECEC;
     }
+
   }
 
   &__socials {
     padding: 48px 0;
     display: flex;
     gap: 43px;
+    @media (max-width: $tablet-small) {
+      padding: 35px 0;
+      padding-top: 48px;
+    }
   }
 
-  &__item {
-  }
+  
 }

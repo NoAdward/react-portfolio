@@ -10,32 +10,54 @@
     display: flex;
     align-items: center;
     gap: 32px;
+    @media (max-width: $tablet) {
+      display: flex;
+      justify-content: center;
+    }
+
   }
 
   &__img {
     img {
+      display: flex;
       max-width: 612px;
+
     }
   }
 
-  &__desc {
-  }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     margin-top: 96px;
+    @media (max-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+
+
+
+    }
     
   }
 
   &__item {
     display: flex;
+    margin-inline: auto;
     &:nth-child(2n) {
       transform: translateY(138px);
+      @media (max-width: $tablet){
+        transform: translateY(0);
+      }
     }
     img {
       max-height: 888px;
+      max-width: 612px;
+      @media (max-width: $tablet){
+        max-width: 366px;
+      }
+
     }
   }
 }
