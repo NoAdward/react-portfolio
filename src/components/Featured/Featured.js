@@ -10,22 +10,22 @@ export default function Featured() {
     <div className="featured container">
       <div className="featured__title">
         <div className="featured__img">
-          <img src={ArrowIcon} alt="arrow" />
+          <ArrowIcon />
         </div>
         <div className="featured__desc">Featured Work</div>
       </div>
 
       <div className="featured__list">
-        <div className="featured__item_1">
+        <div className="featured__item">
           <img src={work1} alt="" />
         </div>
-        <div className="featured__item_2">
+        <div className="featured__item">
           <img src={work2} alt="" />
         </div>
-        <div className="featured__item_3">
+        <div className="featured__item">
           <img src={work3} alt="" />
         </div>
-        <div className="featured__item_4">
+        <div className="featured__item">
           <img src={work4} alt="" />
         </div>
       </div>

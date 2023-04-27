@@ -15,19 +15,19 @@ export default function Footer() {
       </div>
       <div className="footer__socials">
         <div className="footer__item">
-            <img src={ViberIcon} alt="viber" />
+            <ViberIcon />
         </div>
         <div className="footer__item">
-            <img src={DribleIcon} alt="1" />
+            <DribleIcon />
         </div>
         <div className="footer__item">
-            <img src={LinkIcon} alt="2" />
+            <LinkIcon />
         </div>
         <div className="footer__item">
-            <img src={TwitterIcon} alt="3" />
+            <TwitterIcon />
         </div>
         <div className="footer__item">
-            <img src={BehanceIcon} alt="4" />
+            <BehanceIcon />
         </div>
       </div>
     </div>

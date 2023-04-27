@@ -1,17 +1,17 @@
 .projects {
     padding-top: 240px;
     padding-bottom: 240px;
+    img {
+      max-width: 400px;
+      border-radius: 4px;
+    }
 }
 
 .projects-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
-  &__item {
-    img {
-        max-width: 400px;
-        border-radius: 4px;
-    }
-
-  }
+}
+.control-dots {
+  display: none;
 }

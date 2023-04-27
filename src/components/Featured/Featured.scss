@@ -7,6 +7,9 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     opacity: 0.7;
+    display: flex;
+    align-items: center;
+    gap: 32px;
   }
 
   &__img {
@@ -28,13 +31,11 @@
 
   &__item {
     display: flex;
+    &:nth-child(2n) {
+      transform: translateY(138px);
+    }
     img {
       max-height: 888px;
-    }
-
-    
-    &_2 {
-      margin-top: 138px;
     }
   }
 }
