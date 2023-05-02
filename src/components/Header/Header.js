@@ -1,6 +1,12 @@
 import LogoIcon from "../icons/LogoIcon";
 import "./Header.scss";
 
+
+// document.querySelector('.burger').addEventListener('click', function() {
+//   this.classList.toggle('active');
+//   document.querySelector('.header__nav').classList.toggle('open');
+// })
+
 export default function Header() {
   return (
     <div className="header">
@@ -20,7 +26,11 @@ export default function Header() {
             Contact
           </a>
         </div>
+        <div className="burger">
+        <span></span>
       </div>
+      </div>
+      
     </div>
   );
 }
